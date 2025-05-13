@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti - Emanuele Depau</title>
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/0e8a6b/physiotherapy.png" />
+  <style>
+    :root {
+      --primary: #0e8a6b;
+      --secondary: #06614d;
+      --background: #f4f4f4;
+      --text: #333;
+      --white: #fff;
+      --radius: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header img.logo {
+      width: 60px;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .hero {
+      background-image: url('https://img.freepik.com/free-photo/contact-us-customer-support-hotline-people-connect_53876-124144.jpg');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: var(--white);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--text);
+      background: var(--white);
+      margin-top: 4rem;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/physiotherapy.png" alt="Logo fisioterapia" class="logo" />
+    <h1>Emanuele Depau</h1>
+    <p>Fisioterapista a Domicilio - Siena e Provincia</p>
+  </header>
+  <div class="hero"></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="chi.html">Chi Sono</a>
+    <a href="servizi.html">Servizi</a>
+    <a href="zona.html">Zona Coperta</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+  <div class="container">
+
+        <h2>Contatti</h2>
+        <p>Email: <a href="mailto:info@emanueledepau.it">info@emanueledepau.it</a></p>
+        <p>Telefono: <a href="tel:+391234567890">+39 123 456 7890</a></p>
+        <a href="https://wa.me/391234567890" class="cta-button">Contattami su WhatsApp</a>
+        <h3>Scrivimi un messaggio</h3>
+        <form action="https://formsubmit.co/info@emanueledepau.it" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="nome" placeholder="Il tuo nome" required><br/>
+          <input type="email" name="email" placeholder="La tua email" required><br/>
+          <textarea name="messaggio" rows="5" placeholder="Il tuo messaggio" required></textarea><br/>
+          <button type="submit">Invia</button>
+        </form>
+        
+  </div>
+  <footer>
+    <p>&copy; 2025 Emanuele Depau - Fisioterapista a domicilio</p>
+  </footer>
+</body>
+</html>
